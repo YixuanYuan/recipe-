@@ -9,9 +9,17 @@
     color: var(--fontColor);
     font-family: helvetica;
 }
-
 body {
     background: lightblue;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    margin: 0%;
+    border-style: dashed;
+    border-color: #00ff00;
+    background-color: #00ff00;
+    margin-bottom:50px;
 }
 
 ul {
@@ -33,8 +41,10 @@ li {
 }
 
 .list {
+    font-size:25px;
     list-style:inside;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    width:500px;
 }
 
 .list2 {
@@ -64,6 +74,7 @@ u {
 #column {
     float: left;
     width: 50%;
+    margin-bottom: 50px;
 }
 .light-theme {
     --bg: var(--white);
@@ -92,3 +103,8 @@ u {
 
 .btn:focus { outline-style: none; }
 
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
